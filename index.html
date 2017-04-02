@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>MiprimerAngular</title>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="./holamundocontroller.js"></script>
+  </head>
+  <body ng-controller= "holaController">
+      <h1>{{saludo}}</h1>
+      <p>{{objeto}}</p>
+      <p>{{objeto.nombre}}</p>
+      <p>{{objeto.edad}}</p>
+
+
+      <input type="" name="" ng-model="objeto.nombre" value="">
+      <button type="button" ng-click="saludeme()"  name="button">saludo</button>
+
+      <h1 ng-repeat="a in arreglo">
+          {{a.nombre}}- {{a.edad}}
+      </h1>
+
+  </body>
+</html>
